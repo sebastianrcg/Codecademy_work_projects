@@ -1,3 +1,3 @@
-console.log("Starting message mixer project);
+console.log("Starting message mixer project");
 
 
