@@ -24,16 +24,46 @@ const promtOptions = {
 
 }
 
-let food_option;
-let weather_option;
-let activity_option;
+
+function selectPromt(array) {
+    let food_option;
+    let weather_option;
+    let activity_option;    
+
+    for (let option in array){
+        let randomIndex = Math.floor(Math.random()*array[option].length);
+        if (option === "food") {
+            food_option = array[option][randomIndex];
+
+        } else if (option === "weather"){
+            weather_option = array[option][randomIndex];
+
+        }else if (option === "activity"){
+            activity_option = array[option][randomIndex];
+
+        }
+
+        
+    }
+    console.log(`Today I'm feeling like eating ${food_option} for dinner!`);
+    console.log(`The forecast for next week weather is ${weather_option}`);
+    console.log(`This weekend I'm going to ${activity_option}!`);
+
+
+}
+
+selectPromt(promtOptions);
+
+
+
 
 const promtSelection = (array) => {
     let randomIndex;
     for (let option in array) {
-        //console.log(option);
+       
         randomIndex = Math.floor(Math.random()*array[option].length);
-        //console.log(randomIndex);
+        
+        
         if (option === 'food'){
             console.log(`Today I'm feeling like eating ${array[option][randomIndex]} for dinner`);
 
@@ -47,11 +77,7 @@ const promtSelection = (array) => {
     }
 }
 
-/*for (let options in promtOptions) {
-    console.log(options);
-    console.log(promtOptions[options]);
-    console.log(promtOptions[options].length)
-}*/
 
-promtSelection(promtOptions);
+
+//promtSelection(promtOptions);
 
