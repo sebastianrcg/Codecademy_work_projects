@@ -8,7 +8,7 @@ console.log("Starting message mixer project");
 
 
 // Message 1: "Today I'm feeling like eating [random food] for dinner"
-// Message 1_options: food options = ["pizza", "pasta", "tacos", "burger", "salad", "sushi", "sandwhich"]
+// Message 1_options: food options = ["pizza", "pasta", "tacos", "burger", "salad", "sushi", "sandhich"]
 
 
 // Message 2: The forecast for next week weather is [random weather]
