@@ -41,42 +41,49 @@ estudiante.nombre= "Sebas"
 console.log(estudiante)
 
 
-// class trabajo extends persona{
-//     constructor(nombre, apellido, edad, sueldo, posicion){
-//         super(nombre, apellido, edad);
-//         this.sueldo = sueldo;
-//         this.posicion = posicion;
-//         this.estado = true;
-//     }
+class trabajo extends persona{
+    constructor(nombre, apellido, edad, sueldo, posicion){
+        super(nombre, apellido, edad);
+        this.sueldo = sueldo;
+        this.posicion = posicion;
+        this.estado = true;
+    }
 
-//     getSueldo(){
-//         return this.sueldo;
-//     }
+    getSueldo(){
+        return this.sueldo;
+    }
 
-//     getPosicion(){
-//         return this.posicion;
-//     }
+    getPosicion(){
+        return this.posicion;
+    }
 
-//     setSueldo(newSueldo){
-//         this.sueldo = newSueldo;
-//     }
+    setSueldo(newSueldo){
+        this.sueldo = newSueldo;
+    }
 
-//     setPosicion(newPosicion){
-//         this.posicion = newPosicion;
-//     }
+    setPosicion(newPosicion){
+        this.posicion = newPosicion;
+    }
 
-//     getEstado(){
-//         return this.estado;
-//     }
+    getEstado(){
+        return this.estado;
+    }
 
-//     toggleEstado(){
-//         if (this.estado === true){
-//             this.estado = false;
-//         } else {
-//             this.estado = true;
-//         }
-//     }
-// }
+    toggleEstado(){
+        if (this.estado === true){
+            this.estado = false;
+        } else {
+            this.estado = true;
+        }
+    }
+}
 
+const empleado1 = new trabajo("Sebastian", "Cruz", 33, 30000, "Desarrolador");
 
+//console.log(empleado1)
 
+console.log(empleado1.getEstado())
+
+empleado1.toggleEstado()
+
+console.log( empleado1.getEstado())
