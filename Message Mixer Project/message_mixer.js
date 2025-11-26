@@ -18,7 +18,7 @@ console.log("Starting message mixer project");
 // Message 3_options: activity_options = ["go to the beach", "play soccer", "play tennis", "go on a date", "to the park"]
 
 const promtOptions = {
-    food: ["pizza", "pasta", "tacos", "burger", "salad", "sushi", "sandwhich"],
+    food: ["pizza", "pasta", "tacos", "burger", "salad", "sushi", "sandwich"],
     weather: ["sunny", "cloudy", "rainy", "snowy", "windy", "stormy", "foggy"],
     activity: ["go to the beach", "play soccer", "play tennis", "go on a date", "to the park"]
 
